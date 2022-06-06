@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  line-height:1.7;
+  color:rgba(27, 27, 27, 0.842);
+  background-image:linear-gradient(110.79248633202553deg, rgba(250, 200, 205,1) 5.533854166666667%,rgba(248, 193, 105,1) 96.67968749999999%);
+}
+
+.f-c{
+  padding:1rem 0;
+  margin: 1.2rem 0;
+
+
+}
+.f-l{
+  font-size:1.3rem;
+  padding:0.3rem;
+  margin-top:0.3rem;
+  width:20%;
+  text-transform:uppercase;
+}
+.f-i{
+  width:75%;
+   border:none;
+   outline:none;
+   font-size: 1.2rem;
+   padding:1rem;
+   background-color:rgb(233, 227, 227);
+   font-weight: 200;
+   margin: 0 1rem;
+}
+.App{
+  width:50rem;
+  margin:10rem auto;
+  background-color:rgb(247, 240, 240);
+  padding:2rem;
+  box-shadow:2rem 2rem 2rem rgba(0, 0, 0, 0.178);
+  border:none;
+  border-radius:1rem;
+}
+.App h1{
+  text-align:center;
+  margin:1rem;
+  font-size: 2.5rem;;
+  padding :0.5rem;
+  font-weight: 600;;
+}
+
+.btn{
+  width:100%;
+  padding:1.5rem 0;
+  border:none;
+  background-color:rgb(79, 79, 255);
+  color:white;
+  margin:1.5rem auto;
+  font-size: 1.4rem;
+}
+
+.btn:disabled, .btn:disabled:hover , .btn:disabled:active{
+  background-color:#ccc
+}
+
+.f-p{
+  padding:1rem 0;
+  font-size:1.3rem;
+  color:red;
+}

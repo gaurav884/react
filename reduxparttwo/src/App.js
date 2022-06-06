@@ -1,0 +1,25 @@
+import {useSelector , useDispatch} from "react-redux"
+import {counterActions} from "./reducers/CounterReducer"
+import {themeActions} from "./reducers/ThemeToggleReducer"
+
+function App() {
+   
+  const counter = useSelector((state)=>state.CounterReducer.counter)  
+  const lightTheme = useSelector((state)=>state.ThemeToggleReducer.lighttheme)                                                                                                                    
+  const dispatch = useDispatch()
+ 
+  return (
+              
+    <div className=" containerMid">
+    <h2>Theme is {lightTheme ?"light" :"dark"}</h2>
+    <button onClick={()=>{dispatch(themeActions.toggle())}}>Toggle Theme</button><br/>
+    <button onClick={()=>{dispatch(counterActions.decrement())}}>-</button>
+       <span style={{fontWeight:"bolder" , fontSize:"25px"}}>{counter}</span>
+       <button onClick={()=>{dispatch(counterActions.increment())}}>+</button>   
+
+    </div>
+  
+  );
+}
+
+export default App;
